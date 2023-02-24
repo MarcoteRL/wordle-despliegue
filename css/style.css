@@ -41,9 +41,15 @@ body {
 }
 
 .letter {
+    font-family: 'Roboto', sans-serif;
     margin-left: 10px;
     width: 65px;
     height: 65px;
     border: 2px solid rgb(105, 100, 100);
     border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-weight: bold;
 }
