@@ -1,6 +1,20 @@
 {
-  "dependencies": {
-    "jsdom": "^21.1.0",
-    "puppeteer": "^19.7.2"
-  }
+  "name": "wordle-despliegue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoteRL/wordle-despliegue.git"
+  },
+  "author": "Marcote",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoteRL/wordle-despliegue/issues"
+  },
+  "homepage": "https://github.com/MarcoteRL/wordle-despliegue#readme",
+  "type": "module"
 }
