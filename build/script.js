@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 
 import { randomWord as _randomWord } from "../src/words.js";
@@ -32,3 +33,16 @@ function main() {
 main();
 
 console.log(word);
+=======
+"use strict";
+import { randomWord as _randomWord } from "../src/words.js";
+let randomWord = _randomWord;
+
+document.querySelectorAll(".letter").forEach((element) => {
+    element.addEventListener("click", () => {
+        element.innerHTML = "A"
+    })
+})
+
+$("#word").text(randomWord());
+>>>>>>> 8ab930052591c4d7d24eec2ea3f98a488772fe58
