@@ -7,6 +7,11 @@
     box-sizing: border-box
 }
 
+:root {
+    --empty: #757575;
+    --warning: #E4A81D;
+    --correct: #43A047;
+}
 
 body {
     background-color: rgb(41, 39, 39);
@@ -21,35 +26,42 @@ body {
     letter-spacing: 0.3rem;
 }
 
-.container {
-    margin-top: 4%;
-}
-
-#word {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 80px;
-    text-transform: uppercase;
-}
-
-.word {
-    justify-content: center;
-    align-items: center;
+#game {
     display: flex;
-    padding: 5px;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5rem;
+    width: 100%;
+    height: 72vh;
 }
 
-.letter {
-    font-family: 'Roboto', sans-serif;
-    margin-left: 10px;
-    width: 65px;
-    height: 65px;
-    border: 2px solid rgb(105, 100, 100);
-    border-radius: 5px;
-    font-size: 40px;
-    text-align: center;
-    line-height: 60px;
+.game {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(5, auto);
+}
+
+.gameTable {
+    border-radius: 7px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--empty);
+    margin: 4px;
     color: white;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
     font-weight: bold;
+}
+
+.gameTable.empty{
+    background-color: var(--empty);
+}
+.gameTable.warning{
+    background-color: var(--warning);
+}
+.gameTable.correct{
+    background-color: var(--correct);
 }
