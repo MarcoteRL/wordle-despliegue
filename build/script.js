@@ -6,7 +6,7 @@ const word = _randomWord();
 
 function draw(container, col, row, letter = "") {
     const div = document.createElement("div");
-    div.className = "gameTable warning";
+    div.className = "gameTable";
     div.id = `box${row}${col}`;
     div.textContent = letter;
     container.appendChild(div);
