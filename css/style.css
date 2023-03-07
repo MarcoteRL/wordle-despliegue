@@ -14,7 +14,14 @@
 }
 
 body {
-    background-color: rgb(41, 39, 39);
+    background-color: var(--default);
+}
+
+:root {
+    --default: #121213;
+    --empty: #3a3a3c;
+    --wrong: #b59f3b;
+    --right: #538d4e;
 }
 
 .title {
@@ -35,14 +42,13 @@ body {
     height: 72vh;
 }
 
-.game {
+.grid {
     display: grid;
     grid-template-rows: repeat(6, auto);
     grid-template-columns: repeat(5, auto);
 }
 
-.gameTable {
-    border-radius: 7px;
+.box {
     width: 60px;
     height: 60px;
     border: 2px solid var(--empty);
@@ -53,15 +59,16 @@ body {
     place-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
-    font-weight: bold;
 }
 
-.gameTable.empty{
+.box.empty {
     background-color: var(--empty);
 }
-.gameTable.warning{
-    background-color: var(--warning);
+
+.box.wrong {
+    background-color: var(--wrong);
 }
-.gameTable.correct{
-    background-color: var(--correct);
+
+.box.right {
+    background-color: var(--right);
 }
