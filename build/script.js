@@ -58,7 +58,7 @@ function registerKey() {
 function main() {
     const game = document.getElementById("game");
     drawGame(game);
-    registerKey();
+    // registerKey();
 }
 
 main();
