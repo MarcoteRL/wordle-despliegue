@@ -40,15 +40,23 @@ function drawGame(container) {
     container.appendChild(grid);
 }
 
+function isLetter() {
+
+}
+
+function updateGrid() {
+
+}
+
 function registerKey() {
     document.body.onkeydown = (e) => {
         const key = e.key;
-        if(key === "Enter"){
+        if (key === "Enter") {
         }
-        if(key === "Backspace"){
+        if (key === "Backspace") {
 
         }
-        if(isLetter(key)){
+        if (isLetter(key)) {
 
         }
         updateGrid();
