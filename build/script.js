@@ -1,6 +1,9 @@
 "use strict";
 import { randomWord as _randomWord } from "../src/words.js";
 let randomWord = _randomWord;
+const palabra = randomWord();
+
+console.log('randomWord', palabra)
 
 const state = {
     grid: Array(6)
@@ -36,7 +39,6 @@ function drawGame(container) {
             draw(grid, i, j);
         }
     }
-
     container.appendChild(grid);
 }
 
@@ -73,10 +75,10 @@ main();
 
 
 
-// document.querySelectorAll(".letter").forEach((element) => {
-//     element.addEventListener("click", async () => {
-//         element.innerHTML = "A";
-//     })
-// })
+document.querySelectorAll(".letter").forEach((element) => {
+    element.addEventListener("click", async () => {
+        element.innerHTML = "A";
+    })
+})
 
-// $("#word").text(randomWord());
+$("#word").text(palabra);

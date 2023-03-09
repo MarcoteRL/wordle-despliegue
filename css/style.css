@@ -72,3 +72,7 @@ body {
 .box.right {
     background-color: var(--right);
 }
+
+h1{
+    color:white
+}
